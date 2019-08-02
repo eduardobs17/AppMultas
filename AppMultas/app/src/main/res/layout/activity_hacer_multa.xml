@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relativo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eduar.appmultas.hacerMulta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //Nuestro titulo
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:text="Elaborar Multa"
+                    android:id="@+id/TextView"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff579bae"/>
+            </LinearLayout>
+
+            //Infraccion
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infracción: "
+                    android:id="@+id/TextView2"
+                    android:layout_gravity="center"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d"/>
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_infraccion"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            //Costo
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Costo:    $"
+                    android:id="@+id/TextView3"
+                    android:layout_gravity="center"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/editTextPrecio"
+                    android:hint="Multa"/>
+            </LinearLayout>
+
+            //Nombre
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:  "
+                    android:id="@+id/TextViewNombre"
+                    android:layout_gravity="center"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editTextNombrePersona"
+                    android:hint="Nombre de Conductor"/>
+            </LinearLayout>
+
+            //Matricula
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matricula:"
+                    android:id="@+id/TextViewMatricula"
+                    android:layout_gravity="center"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextMatricula"
+                    android:hint="Placas"/>
+            </LinearLayout>
+
+            //Fecha
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:      "
+                    android:id="@+id/TextView4"
+                    android:layout_gravity="center"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editTextFechas"
+                    android:hint="Dia/Mes/Año"/>
+            </LinearLayout>
+
+            //Comentario
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comentario: "
+                    android:id="@+id/TextViewComentario"
+                    android:layout_gravity="left"
+                    android:textIsSelectable="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff20211d" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editTextComentario"
+                    android:hint="Comentario optativo"
+                    android:gravity="start" />
+            </LinearLayout>
+
+            //Para guardar la multa en la BD
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Guardar Multa"
+                android:id="@+id/BotonGuardar"
+                android:background="#ffd3830d"
+                android:layout_marginTop="30dp"
+                android:onClick="agregarMulta" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

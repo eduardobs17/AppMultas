@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/thumbnail">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/iconopolicia"
+            android:id="@+id/listRowImage"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="title"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowTitle"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+</RelativeLayout>
